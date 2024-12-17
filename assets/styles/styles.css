@@ -141,15 +141,14 @@ section {
     background-color: #000; /* Underline color */
   }
   
- /* CSS */
  .card-img {
-    /* Add your custom styles for the card container */
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 20px;
-    width: 400px;
+    margin: 20px auto; /* Center the card */
+    width: 90%; /* Default width as 90% of the container */
+    max-width: 400px; /* Restrict maximum width */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -265,8 +264,9 @@ section {
 }
 @media (max-width: 320px) {
     .card-img {
-        margin: 5px; /* Minimal margin for very small screens */
-        width: 100%; /* Card spans full width */
+        margin: 5px auto; /* Minimal margin for very small screens */
+        width: 60%; /* Card width as 60% of the container */
+        max-width: none; /* Remove max-width constraint for smallest screens */
     }
 
     .card-img .about-img img {

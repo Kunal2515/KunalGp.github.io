@@ -263,3 +263,13 @@ section {
         width: 100%; /* Ensure the card takes up full width */
     }
 }
+@media (max-width: 320px) {
+    .card-img {
+        margin: 5px; /* Minimal margin for very small screens */
+        width: 100%; /* Card spans full width */
+    }
+
+    .card-img .about-img img {
+        border-radius: 5px 5px 0 0; /* Smaller radius for compact screens */
+    }
+}
